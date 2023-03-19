@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { mainActions } from "../../store/mainSlice";
 
 const CartButton = (props) => {
-  const numberGoods = useSelector(state => state.cart.numberOfGoodsCart);
+  const numberGoods = useSelector(state => state.cart.totalAmount);
   const dispatchCartHandler = useDispatch();
   const showOrHideCartHandler = () => {
     dispatchCartHandler(mainActions.changeShowOrHideCard());

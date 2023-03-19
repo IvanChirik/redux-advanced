@@ -5,9 +5,13 @@ import { cartActions } from "../../store/cartSlice";
 
 const ProductItem = (props) => {
   const dispatchCartHandler = useDispatch();
-  const { title, price, description } = props;
+  const { id, title, price, description } = props;
   const addGoodsToCart = () => {
-    dispatchCartHandler(cartActions.incrementGood());
+    dispatchCartHandler(cartActions.incrementGood({
+      id,
+      title,
+      price,
+    }));
   }
   return (
     <li className={styles.item}>
