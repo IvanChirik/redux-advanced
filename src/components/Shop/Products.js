@@ -3,19 +3,19 @@ import styles from "./Products.module.css";
 
 const DEAMMY_ITEMS = [
   {
-    id: (Math.random() * 10).toFixed(2),
+    id: 1,
     title: "Супер-Товар 1",
     price: 7,
     description: "Благодаря своему высокому качеству, этот товар прослужит вам очень долго.",
   },
   {
-    id: (Math.random() * 10).toFixed(2),
+    id: 2,
     title: "Супер-Товар 2",
     price: 9,
     description: "Благодаря своему высокому качеству, этот товар прослужит вам очень долго.",
   },
   {
-    id: (Math.random() * 10).toFixed(2),
+    id: 3,
     title: "Супер-Товар 3",
     price: 11,
     description: "Благодаря своему высокому качеству, этот товар прослужит вам очень долго.",
