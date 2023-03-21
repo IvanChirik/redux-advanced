@@ -1,12 +1,13 @@
 import styles from './StatusBarMessage.module.css';
 
 const StatusBarMessage = (props) => {
+  const { status, title, message } = props.statusFetch;
   let statusClasses = '';
 
-  if (props.status === 'error') {
+  if (status === 'error') {
     statusClasses = styles.error;
   }
-  if (props.status === 'success') {
+  if (status === 'success') {
     statusClasses = styles.success;
   }
 
@@ -14,8 +15,8 @@ const StatusBarMessage = (props) => {
 
   return (
     <section className={messageClasses}>
-      <h2>{props.title}</h2>
-      <p>{props.message}</p>
+      <h2>{title}</h2>
+      <p>{message}</p>
     </section>
   );
 };
